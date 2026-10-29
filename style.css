@@ -156,3 +156,37 @@ body {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
     -5px -5px 10px rgba(255, 255, 255, 0.25);
 }
+
+.siteLink {
+  position: fixed;
+  top: 16px;
+  left: 20px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 0.8em;
+  color: #666;
+  text-decoration: none;
+  border: 2px solid #edf1f4;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
+}
+
+.siteLink:hover {
+  color: #5166d6;
+}
+
+.siteLink:active {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+}
+
+.dark .siteLink {
+  color: #eee;
+  border: 2px solid #333;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+    -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-height: 640px) {
+  body {
+    padding: 64px 0 20px;
+  }
+}
